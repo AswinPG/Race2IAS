@@ -1,0 +1,1308 @@
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+.card .card-image{
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card .card-image img{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.card .card-image:click img{
+    -webkit-transform: scale(1.2) rotate(-7deg);
+    -moz-transform: scale(1.2) rotate(-7deg);
+    -ms-transform: scale(1.2) rotate(-7deg);
+    -o-transform: scale(1.2) rotate(-7deg);
+    transform: scale(1.2) rotate(-7deg);
+}
+
+.card{
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-content {
+    padding: 10px;    
+}
+
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 18px;
+    font-weight: 200;    
+}
+
+.card .card-action{
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.card .card-action a{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform:uppercase;
+    margin-right: 20px;    
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.card .card-action a:click{    
+    color:#ffd8a6;
+    text-decoration:none;
+}
+
+.card .card-reveal{    
+    padding: 10px;
+    position: relative;
+    background-color: #ffc2b3;
+    width: 100%;
+    overflow-y: auto;
+    /*top: 0;*/
+    left:0;
+    bottom:0;
+    /*height: 100%;*/
+    z-index: 1;
+    display: none;    
+}
+
+.card .card-reveal p{
+    color: rgba(0, 0, 0, 0.71);
+    margin:5px ;
+	font-size:18px;
+}
+.card .card-reveal ul{
+    color: rgba(0, 0, 0, 0.71);
+    margin:5px ;
+	font-size:17px;
+}
+
+.btn-custom{
+    background-color: transparent;
+    font-size:18px;
+}
+li.right{
+	background-color:green;
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">1)From the given alternative words, select the word which cannot be formed using the letters of the given word	</span>
+                    <b>CONVERSATION</b>
+                    <ol type="A">
+                        <li>Nation</li>
+                        <li>Version</li>
+                        <li class="right">Station</li>
+                        <li>Reason</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">2. Find the missing number from the given table.
+  </span>
+                    <img src="2.PNG" height="100">
+                    <ol type="A">
+                        <li>7</li>
+                        <li>8</li>
+                        <li class="right">9</li>
+                        <li>6</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">  3.If A = 1, FAT = 27, then FAITH = ?
+</span>
+                    <ol type="" A>
+                        <li class="right">44</li>
+                        <li>42</li>
+                        <li>41</li>
+                        <li>40</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">4. If the word ‘STOVE’ can be written as ‘FNBLK, how can the word ‘VOTES’ be written in that code?</span>
+
+                    <ol type="A">
+                        <li class="right">LBNKF</li>
+                        <li>LNBKF</li>
+                        <li>LKNBF</li>
+                        <li>FLKBN</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">5. If ’PAPER’ is written as ’OZODQ’, how ‘PENCIL’ can be written in that code ?
+ </span>
+                    <ol type="A">
+                        <li>QFODJM</li>
+                        <li>OFOBHM</li>
+                        <li>ODMDJM</li>
+                        <li class="right">ODMBHK</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">6.There are five friends- S, K, M, A, R. S is shorter than K, but taller than R. M is the tallest. A is a little shorter than K and little taller than S. Who has two persons taller and two persons shorter than him ?
+ </span>
+                    <ol type="A">
+                        <li>R</li>
+                        <li>S</li>
+                        <li>K</li>
+                        <li class="right">A</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">7.Rajiv is the brother of Atul. Sonia is the sister of Sunil. Atul is the son of Sonia. How is Rajiv related to Sonia ? </span>
+                    <ol type="A">
+                        <li>Nephew</li>
+                        <li class="right">son</li>
+                        <li>brother</li>
+                        <li>Father</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">8.Of the five members of a panel sitting in a row, A is to the left of B, but on the right of C, D is on the right of B but is on the left of E. Find the member who is sitting in the middle. </span>
+                    <ol type="A">
+                        <li>b</li>
+                        <li class="right">d</li>
+                        <li>a</li>
+                        <li>c</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">9.There are some boys and dogs at a place. If total number of heads is 7 and total number of legs is 20, how many boys and how many dogs are there? </span>
+                    <ol type="A">
+                        <li>2 boys and 5 dogs</li>
+                        <li>3 boys and 4 dogs</li>
+                        <li class="right">4 boys and 3 dogs</li>
+                        <li>4 boys and 3 dogs</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">10.P, Q & R are educated, P, R & S are hard working, R, S & T are employed, P, Q, S & T are polite. Who is educated, hardworking, polite but not employed ?
+ </span>
+                    <ol type="A">
+                        <li class="right">p</li>
+                        <li>q</li>
+                        <li>r</li>
+                        <li>t</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+                <div class="card-action">
+                    <b>Choose the correct options</b>
+
+                </div><!-- card actions -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">11. Rama travels 10 km towards the north, turns left and travels 4 km and then again turns right and covers another 5 km and then turns right and travels another 4 km. How far is he from the starting point ? </span>
+                    <ol type="A">
+                        <li>5km</li>
+                        <li>10km</li>
+                        <li class="right">15km</li>
+                        <li>19km</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title"> 12. A man starts from a point, walks 2 km towards north, turns towards his right and walks 2 km, turns right again and walks. What is the direction now he is facing ?</span>
+                    <ol type="A">
+                        <li class="right">south</li>
+                        <li>east</li>
+                        <li>north</li>
+                        <li>west</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">13.Study the two different positions of a cube given below with dots from 1 to 6 marked on its faces. When 3 is at the bottom, what will be at the top ?
+ </span>
+                    <img src="13.PNG" height="100">
+
+                    <ol type="A">
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="right">6</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">14.Which number is common in all the geometrical figure? </span>
+                    <img src="14.PNG" height="100">
+                    <ol type="A">
+                        <li>8</li>
+                        <li>3</li>
+                        <li class="right">4</li>
+                        <li>5</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">15. Which among of the answer figures shall complete the given question figure: </span>
+                    <img src="15.PNG" height="200">
+                    <p>Answer: A</p>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <h3>Directions(16-17) : In the following questions a series is given with
+                        word/number/figure missing. Choose the correct alternative from the given
+                        ones that will complete the series.</h3>
+
+                    <span class="card-title"> 16. CAT, FDW, IGZ, ?</span>
+                    <ol type="A">
+                        <li>KTC </li>
+                        <li>KJA</li>
+                        <li>LHD</li>
+                        <li class="right">LJC</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">17.Find the missing number?</span>
+                    <img src="17.PNG" height="100">
+                    <ol type="A">
+                        <li>12</li>
+                        <li class="right">21</li>
+                        <li>24</li>
+                        <li>35</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">18. Find the missing number? </span>
+                    <img src="18.PNG" height="100">
+                    <ol type="A">
+                        <li>223</li>
+                        <li>224</li>
+                        <li class="right">225</li>
+                        <li>227</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <h4>Directions: Read the following passage carefully and answer the questions
+                        given below it. Certain words are given in bold to help you to locate them
+                        while answering some of the questions.</h4>
+                    <p>Recent advances in science and technology have made it possible for
+                        geneticists to find out abnormalities in the unborn foetus and take remedial
+                        action to rectify some defects which would otherwise prove to be fatal to
+                        the child. Though genetic engineering is still at its infancy, scientists
+                        can now predict with greater accuracy a genetic disorder. It is not yet an
+                        exact science since they are not in a position to predict when exactly a
+                        genetic disorder will set in. While they have not yet been able to change
+                        the genetic order of the gene in germs, they are optimistic and are holding
+                        out that in the near future they might be successful in achieving this feat.
+                        They have, however, acquired the ability in manipulating tissue cells.
+                        However, genetic misinformation can sometimes be damaging for it may
+                        adversely affect people psychologically. Genetic information may lead to a
+                        tendency to brand some people as inferiors. Genetic information can
+                        therefore be abused and its application in deciding the sex of the foetus
+                        and its subsequent abortion is now hotly debated on ethical lines. But on
+                        this issue geneticists cannot be squarely blamed though this charge has
+                        often been levelled at them. It is mainly a societal problem. At present
+                        genetic engineering is a costly process of detecting disorders but
+                        scientists hope to reduce the costs when technology becomes more advanced.
+                        This is why much progress in this area has been possible in scientifically
+                        advanced and rich countries like the USA, UK and Japan. It remains to be
+                        seen if in the future this science will lead to the development of a race of
+                        supermen or will be able to obliterate disease from this world.
+                    </p>
+                    <span class="card-title">19. Which of the following, according of genetics in becoming an exact science?
+(1) Technicians will not be able to determine the time when genetic disorder will set in
+(2) Technicians have not been able to manipulate germ cells.
+ </span>
+                    <ol type="A">
+                        <li>1 only</li>
+                        <li>2 only</li>
+                        <li class="right">Both 1 and 2</li>
+                        <li>Either 1 or 2
+                        </li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">20. Which of the following is the same in meaning as the word ‘squarely’ as used in the passage?
+ </span>
+                    <ol type="A">
+                        <li>rigidly</li>
+                        <li>firmly</li>
+                        <li class="right">firmly</li>
+                        <li>at right angle</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">21. Which of the following is not true, according to the passage?
+ </span>
+                    <ol type="A">
+                        <li class="right"> Society is not affected by the research in genetic
+                            engineering.
+                        </li>
+                        <li>Genetic engineers are not able to say some things with certainty.</li>
+                        <li>If genetic information is not properly handled, it will create
+                            problems
+                        </li>
+                        <li>If genetic information is not properly handled, it will create
+                            problems
+                        </li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">22. According to the author, the present state of knowledge about heredity has made geneticists.
+ </span>
+                    <ol type="A">
+                        <li>introspective</li>
+                        <li>introspective</li>
+                        <li>arrogant</li>
+                        <li class="right">optimistic</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">23. What is the tone of the author in the last sentence of the passage?
+ </span>
+                    <ol type="A">
+                        <li>resignation</li>
+                        <li>cautious</li>
+                        <li>relief</li>
+                        <li class="right">concern</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">24. Which of the following is not true of the genetic engineering movement?
+ </span>
+                    <ol type="A">
+                        <li>Possibility of abuse</li>
+                        <li>It is confronted by ethical problems.</li>
+                        <li>Increased tendency to manipulate gene cells.</li>
+                        <li class="right">Acquired ability to detect genetic disorders in unborn
+                            babies.
+                        </li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">25. Which of the following is the same in meaning as the word ‘feat’ as used in the passage?
+ </span>
+                    <ol type="A">
+                        <li>Process</li>
+                        <li>focus</li>
+                        <li>fact</li>
+                        <li class="right">goal</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+				
+					
+		
+                    <span class="card-title">26.Directions: Read each sentence to find out if there is any error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer.
+</span>
+                    <ol type="A">
+                        <li>Governments and business must reduce</li>
+                        <li>its own energy use</li>
+                        <li>and promote conservation</li>
+                        <li class="right"> to their citizens and employees</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <span class="card-title">27.Directions: Read each sentence to find out if there is any error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer </span>
+                    <ol type="A">
+                        <li>If the allegations</li>
+                        <li>made against him</li>
+                        <li>are found to be true</li>
+                        <li class="right">he could face rigorous imprisonment</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <span class="card-title">28.Directions: Read each sentence to find out if there is any error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer </span>
+                        <ol type="A">
+                            <li>Having acquired some experience</li>
+                            <li>she is no longer</li>
+                            <li>one of those who believes</li>
+                            <li class="right">very explanation she is given.</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">29.Directions: Read each sentence to find out if there is any error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer.
+ </span>
+                        <ol type="A">
+                            <li>On discovering that</li>
+                            <li>it was a forgery</li>
+                            <li class="right">he torn up the agreement</li>
+                            <li>he had signed.</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">30.Directions: Read each sentence to find out if there is any error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer.
+ </span>
+                        <ol type="A">
+                            <li class="right">With regard to implementation the</li>
+                            <li>details of the proposal</li>
+                            <li>the committee was divided</li>
+                            <li>in its opinion.</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <p><strong>Directions:</strong>Which of the phrases (a), (b), (c) and (d)
+                            given
+                            below each sentence should replace the phrase to make the sentence
+                            grammatically correct?
+                        </P>
+                        <span class="card-title"> 31. Many employees are hesitate to volunteer for assignments in a foreign country because of language and cultural issues.
+</span>
+                        <ol type="A">
+                            <li>hesitated to volunteer</li>
+                            <li class="right">hesitant to volunteer</li>
+                            <li>hesitating volunteer</li>
+                            <li>hesitatingly volunteer</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <p><strong>Directions:</strong> Which of the phrases (a), (b), (c) and (d)
+                            given
+                            below each sentence should replace the phrase to make the sentence
+                            grammatically correct?
+                        </p>
+                        <span class="card-title">32. Salaries in state owned enterprises today have to be in line on prevailing market rates in order to reduce turnover.
+</span>
+                        <ol type="A">
+                            <li class="right">been on line with</li>
+                            <li>to be aligned on</li>
+                            <li>been in line for</li>
+                            <li>to be in line with</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+
+                        <p><strong>Directions:</strong> Which of the phrases (a), (b), (c) and (d)
+                            given
+                            below each sentence should replace the phrase to make the sentence
+                            grammatically correct?
+                        </P>
+                        <span class="card-title">33. As a member of the Cabinet, Alyar had the opportunity to observe debates and see which they were resolved.
+ </span>
+                        <ol type="A">
+                            <li>about they being resolved</li>
+                            <li>that it was resolved</li>
+                            <li>to its resolution</li>
+                            <li class="right">how they were resolved</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+
+                        <p><strong>Directions:</strong>In each of the following sentences there are
+                            two
+                            blank spaces. Below each five pairs of words have been denoted by
+                            numbers
+                            (a), (b), (c),and (d). Find out which pair of words can be filled up in
+                            the
+                            blanks in the sentence in the same sequence to make the sentence
+                            meaningfully complete.
+                        </P>
+                        <span class="card-title"> 34. Mr. Srinivasan is ___ to become Chairman of the group ____ the retirement of his father.
+</span>
+                        <ol type="A">
+                            <li class="right">set, following</li>
+                            <li>voted, subsequent</li>
+                            <li>selected, despite</li>
+                            <li>approved, because</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <p><strong>Directions:</strong>In each of the following sentences there are
+                            two
+                            blank spaces. Below each five pairs of words have been denoted by
+                            numbers
+                            (a), (b), (c),and (d). Find out which pair of words can be filled up in
+                            the
+                            blanks in the sentence in the same sequence to make the sentence
+                            meaningfully complete.
+                        </P>
+                        <span class="card-title"> 35. ___ to your error the ___ consignment has been delayed by a week.
+</span>
+                        <ol type="A">
+                            <li>According, important</li>
+                            <li>Duly, urgent</li>
+                            <li class="right">Owing, entire</li>
+                            <li>Added, crucial</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <P><strong>Directions:</strong>In each of the following sentences there are
+                            two
+                            blank spaces. Below each five pairs of words have been denoted by
+                            numbers
+                            (a), (b), (c),and (d). Find out which pair of words can be filled up in
+                            the
+                            blanks in the sentence in the same sequence to make the sentence
+                            meaningfully complete.
+                        </P>
+                        <span class="card-title">36. On account of the ___ in sales the software firm has achieved an eight per cent ___ in net profit. </span>
+                        <ol type="A">
+                            <li>surge, fall</li>
+                            <li class="right">increase, rise</li>
+                            <li>decline, slope</li>
+                            <li>hike, loss</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                        <p><strong>Directions:</strong>In each of the following sentences there are
+                            two
+                            blank spaces. Below each five pairs of words have been denoted by
+                            numbers
+                            (a), (b), (c),and (d). Find out which pair of words can be filled up in
+                            the
+                            blanks in the sentence in the same sequence to make the sentence
+                            meaningfully complete.
+                        </P>
+                        <span class="card-title">37. We are proud to say that today ___ 26 per cent of our total accounts are ___ by women and senior citizens.
+ </span>
+                        <ol type="A">
+                            <li>approximate, held</li>
+                            <li class="right">nearly, authorised</li>
+                            <li> over, maintain</li>
+                            <li>above, open</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+				
+
+                    <span class="card-title">38. A boy was asked to multiply a certain number by 50. He multiplied it by 30 and got his answer less than the correct one by 400. The number to be multiplied was :
+ </span>
+                        <ol type="A">
+                            <li>10</li>
+                            <li class="right">20</li>
+                            <li>30</li>
+                            <li>40</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">39. In a school 70% of the students are girls. The number of boys are 510. Then the total number of students in the school is
+ </span>
+                        <ol type="A">
+                            <li>850</li>
+                            <li class="right">1700</li>
+                            <li>1830</li>
+                            <li>1900</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title"> 40. Applied to a bill for Rs. 1,00,000 the difference between a discount of 40% and two successive discounts of 36% and 4% is
+</span>
+                        <ol type="A">
+                            <li>Nil</li>
+                            <li class="right">Rs. 1,440</li>
+                            <li>Rs. 2,500</li>
+                            <li>Rs. 4,000</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">41. A tradesman marks his goods 10% above his cost price. If he allows his customers 10% discount on the marked price, how much profit or loss does he make, if any?
+ </span>
+                        <ol type="A">
+                            <li>1% gain</li>
+                            <li class="right">1% loss</li>
+                            <li>5% gain</li>
+                            <li>No gain, no loss</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">42. A discount of 15% on one article is the same as discount of 20% on a second article. The costs of the two articles can be
+ </span>
+                        <ol type="A">
+                            <li>Rs. 85, Rs. 60</li>
+                            <li>Rs. 60, Rs. 40</li>
+                            <li>Rs. 40, Rs. 20</li>
+                            <li class="right">Rs. 80, Rs. 60</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">43. An agent gets a commission of 2.5% on the sales of cloth. If on a certain day, he gets Rs. 12.50 as commission, the cloth sold through him on that day is worth
+ </span>
+                        <ol type="A">
+                            <li>Rs.250</li>
+                            <li class="right">Rs.500</li>
+                            <li>Rs.750</li>
+                            <li>Rs.1250</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">44. A sum of money doubles itself at compound interest in 15 years. In how many years it will become eight times?
+ </span>
+                        <ol type="A">
+                            <li>30</li>
+                            <li class="right">45</li>
+                            <li>50</li>
+                            <li>60</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">45. Compound interest (compounded annually) on a certain sum of money for 2 years at 4% per annum is Rs. 102. The simple interest on the same sum for the same rate and for the same period will be
+ </span>
+                        <ol type="A">
+                            <li>Rs. 99</li>
+                            <li>Rs. 101</li>
+                            <li class="right">Rs. 100</li>
+                            <li>Rs. 98</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">46. A sum of money trebles itself in 20 years at Simple Interest . Find the rate of interest?
+ </span>
+                        <ol type="A">
+                            <li>30%</li>
+                            <li>25%</li>
+                            <li class="right">10%</li>
+                            <li>18%</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">47. The simple interest on a certain sum at 5% per annum for 3 years and 4 years differ by 
+Rs. 42. The sum is
+ </span>
+                        <ol type="A">
+                            <li>Rs. 210</li>
+                            <li>Rs. 280</li>
+                            <li>Rs. 750</li>
+                            <li class="right">Rs. 840</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <div class="card">
+
+                    <div class="card-content">
+                    <span class="card-title">48. Oranges are bought at 7 for Rs. 3. At what rate per hundred must they be sold to gain 33%?
+ </span>
+                        <ol type="A">
+                            <li>Rs. 56</li>
+                            <li>Rs. 60/li>
+                            <li>Rs. 58</li>
+                            <li class="right">Rs. 57</li>
+                        </ol>
+
+                        <br/><br/>
+                    </div><!-- card content -->
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <div class="card">
+
+                        <div class="card-content">
+                    <span class="card-title">49. The cost price of 36 books is equal to the selling price of 30 books. The gain is
+ </span>
+                            <ol type="A">
+                                <li class="right">20%</li>
+                                <li>16
+                                    <small>4/6
+                                    </small>
+                                    %
+                                </li>
+                                <li>18%</li>
+                                <li>82
+                                    <small>2/6</small>
+                                    %
+                                </li>
+                            </ol>
+
+                            <br/><br/>
+                        </div><!-- card content -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <div class="card">
+
+                        <div class="card-content">
+                    <span class="card-title">50. A man wanted to sell an article with 20% profit; but he actually sold at 20% loss for Rs. 480. At what price he wanted to sell it to earn the profit?
+ </span>
+                            <ol type="A">
+                                <li class="right">Rs. 720</li>
+                                <li>Rs. 840</li>
+                                <li>Rs. 600</li>
+                                <li>Rs. 750</li>
+                            </ol>
+
+                            <br/><br/>
+                        </div><!-- card content -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

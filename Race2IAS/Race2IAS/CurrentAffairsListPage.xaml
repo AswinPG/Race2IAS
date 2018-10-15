@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.CurrentAffairsListPage"
+             BackgroundColor="#FFF7E6">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Image x:Name="Image"
+                   Source="wl.png"
+                   HeightRequest="210"/>
+            <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   BackgroundColor="White"
+                   >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Recent_Tapped"/>
+                </Frame.GestureRecognizers>
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="Orange"
+                                iOS="Orange"/>
+                </Frame.OutlineColor>
+                <Frame.Margin>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                </Frame.Margin>
+                <Frame.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                </Frame.Padding>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="1.  "
+                           TextColor="RosyBrown"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Recent"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   BackgroundColor="White"
+                   >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="August_Tapped"/>
+                </Frame.GestureRecognizers>
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="Orange"
+                                iOS="Orange"/>
+                </Frame.OutlineColor>
+                <Frame.Margin>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                </Frame.Margin>
+                <Frame.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                </Frame.Padding>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2.  "
+                           TextColor="RosyBrown"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="August 2018"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,1377 @@
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+.card .card-image{
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card .card-image img{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.card .card-image:click img{
+    -webkit-transform: scale(1.2) rotate(-7deg);
+    -moz-transform: scale(1.2) rotate(-7deg);
+    -ms-transform: scale(1.2) rotate(-7deg);
+    -o-transform: scale(1.2) rotate(-7deg);
+    transform: scale(1.2) rotate(-7deg);
+}
+
+.card{
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    position: relative;
+
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-content {
+    padding: 10px;    
+}
+
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 24px;
+    font-weight: 200;    
+}
+
+.card .card-action{
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.card .card-action a{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform:uppercase;
+    margin-right: 20px;    
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.card .card-action a:click{    
+    color:#ffd8a6;
+    text-decoration:none;
+}
+
+
+
+
+.btn-custom{
+    background-color: transparent;
+    font-size:18px;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <b>Directions: (1-8 ) Read the following passage carefully and answer the
+                        questions given below</b>
+
+                    <p>Govind’s father was a rich landlord, who was loved and respected by all his
+                        tenants. When he died, he left large tracts of land to Govind. But Govind
+                        did not spend a single day looking after his land. He had a funny idea, that
+                        there existed a magic potion which, if it was poured on any object would
+                        turn it into gold. He spent all his time trying to learn about this potion.
+                        People took advantage of him and cheated him. His wife grew anxious. Given
+                        the amount of money Govind was spending, she was sure that they would soon
+                        be paupers.
+                        One day, a widely respected sage who had been to the Himalayas came to their
+                        town. Govind asked him about the potion. To his surprise the sage answered,
+                        “I have learnt how to brew such a potion. But it is a difficult process.”
+                        “Tell me!” insisted Govind, hardly able to believe his luck. “You have to
+                        collect the dew which settles on the leaves of a banana tree every morning
+                        during winter. There is a condition though. The tree should be planted and
+                        watered regularly with your own hands. Store the collected dew in an earthen
+                        vessel and when you have five litres, bring it to me. I will recite a sacred
+                        mantra to transform the dew into the potion. A drop of the potion will be
+                        sufficient to change any object into gold.”
+                        Govind was worried. “Winter is only for a few months in the year. It will
+                        take me years to collect the dew.” “You can plant as many trees as you
+                        want,” replied the sage.,Govind went home and after talking to his wife,
+                        began clearing the large fields which has been lying vacant for years. He
+                        planted rows of banana saplings. He tended them with great care. His wife
+                        helped him too. She would take the banana crop to market and get a good
+                        price. Over the years the plantation grew and finally after six years Govind
+                        had five litres of dew. He went to the sage who smiled, uttered a mantra and
+                        sprinkled a few drops of dew on a copper vessel. To Govind’s dismay, nothing
+                        happened. “You have cheated me!” he shouted at the sage.
+                        The sage, however, smiled. Govind’s wife then came forward with a box. The
+                        sage opened it and revealed stacks of gold coins inside. Turning to Govind
+                        he said, “You worked hard on your land and created a plantation. Your wife
+                        sold the produce in the market. It was your hard work which created this
+                        wealth, not magic. If I had told you this earlier, you would not have
+                        listened.” Govind understood the wisdom behind the sage’s words and worked
+                        even harder from that day on.</p>
+                    <span class="card-title">1. Why did Govind decide to cultivate a banana crop?</span>
+                    <ol type="A">
+                        <li>The soil of his land was suitable only for cultivating bananas.</li>
+                        <li>It was the most highly priced commodity in the region.</li>
+                        <li>It could be grown at any time of the year including winter</li>
+                        <li>The ingredient for the magic potion could only be obtained from a banana
+                            tree.
+                        </li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+						
+                   <span class="card-title">2. What made Govind angry with the sage?
+</span>
+                    <ol type="A">
+                        <li>The sage had conspired with Govind’s wife against him.</li>
+                        <li>He had forgotten the magic spell and all Govind’s hard work was in
+                            vain.
+                        </li>
+                        <li>He had lost a good deal of money in cultivating bananas.</li>
+                        <li>None of these.</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">3.How did Govind acquire his dream of gold finally?</span>
+                    <ol type="A">
+                        <li>The sage gave him gold as a reward for his hard work was in vain.</li>
+                        <li>His wife diligently saved the gold he had received from his father.</li>
+                        <li>By selling the banana plantation.</li>
+                        <li>None of these.</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">4.Which of the following is TRUE in the context of the passage?</span>
+
+                    <ol type="1">
+                        <li>Govind was easily fooled by people.</li>
+                        <li>Govind was preserving by nature.</li>
+                        <li>The sage had never actually been to the Himalayas.</li>
+
+                    </ol>
+                    <ol type="A">
+                        <li>Only 1</li>
+                        <li>Both 1 and 2</li>
+                        <li>Only 2</li>
+                        <li>Both 1 and 3</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">5.Why did Govind’s father give him large plots of land?</span>
+                    <ol type="A">
+                        <li>It was his way of instilling a sense of responsibility in his son.</li>
+                        <li>Govind was his only son and sole heir.</li>
+                        <li>To provide Govind with sufficient funds to pursue his interest of
+                            discovering a magic potion.
+                        </li>
+                        <li>He wanted Govind to continue to look after the tenants.</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">6.Which of the following can be said about the sage?</span>
+                    <ol type="A">
+                        <li>He was cunning and plotted with Govind’s wife to cheat him.</li>
+                        <li>He had no magical powers as such and used to swindle people.</li>
+                        <li>He was a good judge of people.</li>
+                        <li>He did not deserve his good reputation.</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">7.Why was Govind’s wife worried?</span>
+                    <ol type="A">
+                        <li>Govind had no knowledge of farming and could not cultivate the land he
+                            had inherited from his father.
+                        </li>
+                        <li>Govind had not friends because he was obsessed with finding a potion
+                            which would turn anything into gold.
+                        </li>
+                        <li>Govind was only interested in studying under different sages and
+                            neglected his family duties.
+                        </li>
+                        <li>Since Govind had devoted all his time and wealth to finding a magic
+                            potion they would soon be poor.
+                        </li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">8.Why did Govind’s wife help him in the fields?</span>
+                    <ol type="1">
+                        <li>To support her husband in his endeavour to find a magic potion.</li>
+                        <li>The sage had advised her to help her husband succeed.</li>
+                        <li>He needed someone to help him collect the dew.</li>
+                    </ol>
+
+                    <ol type="A">
+                        <li>None </li>
+                        <li>Only 1</li>
+                        <li>Both 1 and 2 </li>
+                        <li>1,2 and 3</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <p>Directions 9-11: In each of the following questions we have sentences given
+                        in four parts. Read each sentence to find out whether there is an error in
+                        it. The error, if any, be in one part of the sentence, the alphabet of that
+                        part is the answer</p>
+
+                    <span class="card-title">9.Most of the third world (a)/ country are experiencing (b)/  the ethnic and communal problems (c)/  in varying degrees (d)</span>
+
+
+                    <ol type="A">
+                        <li>Most of the third world</li>
+                        <li>country are experiencing</li>
+                        <li>the ethnic and communal problems</li>
+                        <li>in varying degrees</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">10.In case of any land dispute (a)/panchayat officials (b)/will determine (c)/how the properties are to be divided (d).</span>
+
+
+                    <ol type="A">
+                        <li>In case of any land dispute </li>
+                        <li>panchayat officials</li>
+                        <li>will determine</li>
+                        <li>how the properties are to be divided</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">11.You are learning English (a)/ for the last one year (b)/ but you show (c)/ no improvement whatsoever (d)</span>
+
+
+                    <ol type="A">
+                        <li>You are learning English </li>
+                        <li>for the last one year</li>
+                        <li>but you show </li>
+                        <li>no improvement whatsoever</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <p>Directions:12-14  Which of the following phrases (a),(b), (c) and (d) given
+                        below each sentence should replace the phrase printed in the sentence to
+                        make it grammatically correct? If the sentence is correctly given then
+                        choose no correction required.</p>
+
+                    <span class="card-title">12.Starting out my own business at this time would affect the financial stability of my family.</span>
+
+
+                    <ol type="A">
+                        <li>Starting up my </li>
+                        <li>For starting with</li>
+                        <li>To start out mine </li>
+                        <li>No correction required.</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title"> 13.Use a tactic for mixing the inferior with good quality rice is dishonest and you will lose your license.</span>
+
+
+                    <ol type="A">
+                        <li>Using tactics as </li>
+                        <li>Using a tactic like</li>
+                        <li>To use tactics </li>
+                        <li>Used to tactics like</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">14.The company will invest more six hundred crores in the next five years to expand its operations in Britain.</span>
+
+
+                    <ol type="A">
+                        <li>will further invest </li>
+                        <li>has invested more than</li>
+                        <li>have invested over </li>
+                        <li>will be invested above</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">15.Several of our projects have delayed because the equipment we ordered was delivered late.</span>
+
+
+                    <ol type="A">
+                        <li>have been delivered when </li>
+                        <li>delayed because of</li>
+                        <li>are delayed since </li>
+                        <li>were delayed with</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <p>Directions: (16-20 )Rearrange the following six sentences A, B, C, D, E and F
+                        in the proper sequence to form a meaningful paragraph; then answer the
+                        questions given below them.</p>
+
+                    <ol type="A">
+                        <li>The hall was filled with children, teachers, students, family members
+                            and those who were close to him. 
+                        </li>
+                        <li>Normally, such ceremonies are attended by important people like
+                            industrialists, politicians and VIPs.
+                        </li>
+                        <li>What I saw when I stepped into the hall amazed me. </li>
+                        <li>I went home with the feeling that it was a most unusual oath taking
+                            ceremony with only those who were ‘important’ to him present.
+                        </li>
+                        <li>When he was elected President, he invited me to the swearing in ceremony
+                            in the Central Hall of Parliament
+                        </li>
+                        <li>However, in this case everyone who attended the ceremony seemed to know
+                            him personally.
+                        </li>
+                    </ol>
+                    <span class="card-title">16. Which of the following should be the FIRST sentence after rearrangement?</span>
+
+                    <ol type="A">
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>E</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">17. Which of the following should be the SECOND sentence after rearrangement?</span>
+
+
+                    <ol type="A">
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                        <li>E</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">18. Which of the following should be the THIRD sentence after rearrangement?</span>
+
+
+                    <ol type="A">
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">19. Which of the following should be the FIFTH sentence after rearrangement?</span>
+
+
+                    <ol type="A">
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                        <li>E</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">20. Which of the following should be the LAST (SIXTH) sentence after rearrangement?</span>
+
+
+                    <ol type="A">
+                        <li>A </li>
+                        <li>B</li>
+                        <li>C </li>
+                        <li>D</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">21. The sum of three consecutive odd numbers is 147 then the middle number is?</span>
+
+
+                    <ol type="A">
+                        <li>47</li>
+                        <li>48</li>
+                        <li>49</li>
+                        <li>51</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">22. If a*b is a+b-ab then 5*7 equals</span>
+
+
+                    <ol type="A">
+                        <li>12</li>
+                        <li>-47</li>
+                        <li>-23</li>
+                        <li>35</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+						
+                   <span class="card-title">
+23. The product of two positive numbers is 2500. If one number is four times the other, then the sum of the two numbers is</span>
+
+
+                    <ol type="A">
+                        <li>25</li>
+                        <li>125</li>
+                        <li>225</li>
+                        <li>250</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">24. Which of the following is a perfect square as well as a cube?</span>
+
+                    <p> 343, 125, 64, 81</p>
+
+                    <ol type="A">
+                        <li>81</li>
+                        <li>125</li>
+                        <li>343</li>
+                        <li>64</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">25.The average of all the numbers between 6 and 50 which is divisible by 5 is?</span>
+
+                    <ol type="A">
+                        <li>27.5</li>
+                        <li>30</li>
+                        <li>28.5</li>
+                        <li>22</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">26. The average of 9 numbers is 30. The average of first 5 numbers is 25 and last 3 numbers is 35 . What is the 6th number?</span>
+
+                    <ol type="A">
+                        <li>20</li>
+                        <li>30</li>
+                        <li>40</li>
+                        <li>50</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">27. If a: b=7:9 and b: c=15:7. Then what is   a:c?  </span>
+
+
+                    <ol type="A">
+                        <li>5:3</li>
+                        <li>3:5</li>
+                        <li>7:21</li>
+                        <li>7:1</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+						
+                   <span class="card-title">28.Two numbers are in the ratio 1:3. If their sum is 240, then their difference is?
+120</span>
+
+
+                    <ol type="A">
+                        <li>120</li>
+                        <li>108</li>
+                        <li>100</li>
+                        <li>96</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">29. If 40% of a number is 30. Find 56% of the same number</span>
+
+                    <ol type="A">
+                        <li>40</li>
+                        <li>42</li>
+                        <li>39</li>
+                        <li>37</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">30. The length of a rectangle is first increased by 10% then decreased by 5%. Find net percentage change on the area.</span>
+
+
+                    <ol type="A">
+                        <li>No change </li>
+                        <li>4.5% Increase</li>
+                        <li>4.5% decrease </li>
+                        <li>3.5 % Increase</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">31. A man crosses a road 250 meter wide in 75 seconds. Then his speed in Km/ Hour is</span>
+
+
+                    <ol type="A">
+                        <li>10</li>
+                        <li>12.5</li>
+                        <li>12</li>
+                        <li>14</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">32. If the cost price of 12 oranges is equal to selling price of 10 oranges, then the percentage of profit is</span>
+
+
+                    <ol type="A">
+                        <li>20</li>
+                        <li>18</li>
+                        <li>16.5</li>
+                        <li>25</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+						
+                   <span class="card-title">33. What is the Principle to get 150 Rs simple interest for six months at the rate of 4% per annum?
+</span>
+
+                    <ol type="A">
+                        <li>5000</li>
+                        <li>15000</li>
+                        <li>10000</li>
+                        <li>7500</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <p>Directions (34-36) select the related word from the given alternatives.</p>
+                    <span class="card-title">34. House: Room :: World : ?</span>
+
+
+                    <ol type="A">
+                        <li>Land</li>
+                        <li>State</li>
+                        <li>Peopled</li>
+                        <li>Nation</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">Smoke : Pollution :: War : ?</span>
+
+
+                    <ol type="A">
+                        <li>Destruction</li>
+                        <li>Victory</li>
+                        <li>Peace</li>
+                        <li>Treaty</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">36. Lion : Den :: Rabbit : ?</span>
+
+
+                    <ol type="A">
+                        <li>Hole</li>
+                        <li>Pit</li>
+                        <li>Burrow</li>
+                        <li>Trench</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">37. Pointing to a woman in a photograph, a man says - “She is the only daughter of the mother-in law of my only son.” How is the woman related  to the man?</span>
+
+
+                    <ol type="A">
+                        <li>Daughter</li>
+                        <li>Wife</li>
+                        <li>Daughter-in-law</li>
+                        <li>Mother</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">38. If  + means - , - means × , × means ÷ and  ÷ means + then 2 ÷ 6 × 6 ÷ 2 = ?</span>
+
+                    <ol type="A">
+                        <li>1</li>
+                        <li>0</li>
+                        <li>10</li>
+                        <li>5</li>
+                    </ol>
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">39. Find the odd one out from the given four alternatives</span>
+
+
+                    <ol type="A">
+                        <li>Tomato</li>
+                        <li>Potato</li>
+                        <li>Carrot</li>
+                        <li>Onion</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+
+                    <span class="card-title">40. Find the odd one out from the given four alternatives</span>
+
+
+                    <ol type="A">
+                        <li>BGIE</li>
+                        <li>AGHB</li>
+                        <li>GJGE</li>
+                        <li>AGKD</li>
+                    </ol>
+
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">41. If a person moves 4 Km towards west, then turns right and moves 3 Km and then turns right and moves 6 Km, what is the direction in which he is moving now?</span>
+
+
+                    <ol type="A">
+                        <li>East</li>
+                        <li>West</li>
+                        <li>North</li>
+                        <li>South</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">42. Which of the following years did not have 29 days in February?</span>
+
+
+                    <ol type="A">
+                        <li>2000</li>
+                        <li>2004</li>
+                        <li>1996</li>
+                        <li>1966</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+                    <p>Directions (43,44) What will come in place of question mark?</p>
+                    <span class="card-title">43.   24, 72, 120, ?</span>
+
+
+                    <ol type="A">
+                        <li>144</li>
+                        <li>168</li>
+                        <li>192</li>
+                        <li>216</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">44. CEG, IKM, OQS, ?</span>
+
+
+                    <ol type="A">
+                        <li>TVX</li>
+                        <li>UWY</li>
+                        <li>UWZ</li>
+                        <li>TVW</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">45. Select the correct alternative to complete the given series</span>
+                    <p>_ab_b_bc_ca_</p>
+
+                    <ol type="A">
+                        <li>accbb</li>
+                        <li>abcca</li>
+                        <li>cacab</li>
+                        <li>abacb</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">46. Arrange the following words as they appear in the dictionary?</span>
+
+
+                    <ol type="1">
+                        <li>Chemistry</li>
+                        <li>Chamber</li>
+                        <li>Cheap</li>
+                        <li>Cheerful</li>
+                    </ol>
+
+                    <ol type="A">
+                        <li>2, 1,3,4</li>
+                        <li>3, 4, 2,1</li>
+                        <li>2, 4,3,1</li>
+                        <li>2, 3, 4,1</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">47. From the given alternative words, select the one which can't be formed using the letters of the given word.</span>
+                    <p>BRITTANICA</p>
+
+                    <ol type="A">
+                        <li>ANT</li>
+                        <li>ANTARCTICA</li>
+                        <li>CAT</li>
+                        <li>BRITANIA</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">48. Find the missing number in the given figure?</span>
+                    <img src="48.png" height=100>
+
+                    <ol type="A">
+                        <li>11</li>
+                        <li>25</li>
+                        <li>10</li>
+                        <li>27</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">49. Find the missing number in the box given below?</span>
+
+                    <img src="49.png" height=100>
+                    <ol type="A">
+                        <li>22</li>
+                        <li>4</li>
+                        <li>37</li>
+                        <li>15</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <div class="card">
+
+                <div class="card-content">
+
+                    <span class="card-title">50.If“LEVEL”is written     as “MFWFM” then how can we write “VELEL”?</span>
+
+
+                    <ol type="A">
+                        <li>WFMMF</li>
+                        <li>FMFMW</li>
+                        <li>WFMFM</li>
+                        <li>WMM</li>
+                    </ol>
+
+                    <br/><br/>
+                </div><!-- card content -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

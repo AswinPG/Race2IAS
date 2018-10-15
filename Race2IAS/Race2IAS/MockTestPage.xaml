@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.MockTestPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            
+            <Label Text="Category 1"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="Large"
+                   Margin="5"/>
+            <Grid RowSpacing="6"
+                  ColumnSpacing="3"
+                  Padding="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="Orange"
+                   >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="c1Paper1Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="general.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+                        <StackLayout Orientation="Vertical"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="End">
+                            <Label Text="Paper 1"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                            <Label x:Name="Label1"
+                               Text="General Studies"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   BackgroundColor="OrangeRed"
+                   >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="CSAT1Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="Orange"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="capital.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <StackLayout Orientation="Vertical"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="End">
+                            <Label Text="Paper 2"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                            <Label 
+                               Text="CSAT"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+
+            <Label Text="Category 2"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="Large"
+                   Margin="5"/>
+            <Grid RowSpacing="6"
+                  ColumnSpacing="3"
+                  Padding="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="Orange"
+                   >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="c2paper1Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="general.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+                        <StackLayout Orientation="Vertical"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="End">
+                            <Label Text="Paper 1"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                            <Label x:Name="Label3"
+                               Text="General Studies"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   BackgroundColor="OrangeRed"
+                   >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="CSAT2Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="Orange"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="capital.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <StackLayout Orientation="Vertical"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="End">
+                            <Label Text="Paper 2"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                            <Label 
+                               Text="CSAT"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

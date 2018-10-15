@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.View.BasicScienceaAge">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <Image x:Name="Image"
+                   Source="wl.png"
+                   HeightRequest="210"/>
+                <Frame IsClippedToBounds="false"
+                    HasShadow="True"
+                    BackgroundColor="#FF9241"
+                    Margin="7"
+                    OutlineColor="Red"
+                    Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Sense And Sense Organs"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Habitat"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Our Environment"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Conservation of Plants and Animals"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Crop Production and Management"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="6.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Pollution of Air"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScienceAndSenseOrgansTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="7.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Natural Resources and Their Conservation"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

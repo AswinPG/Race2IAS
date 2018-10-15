@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             x:Class="Race2IAS.CarousalWebView">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <forms:CarouselView x:Name="MainCarouselView"
+                            HeightRequest="630"
+                            BackgroundColor="#FFF7E6">
+                <forms:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ScrollView>
+                            <WebView x:Name="PlainWeb"
+                                 HeightRequest="600"
+                                 WidthRequest="500"
+                                 Source="{Binding .}"/>
+                        </ScrollView>
+                    </DataTemplate>
+                </forms:CarouselView.ItemTemplate>
+            </forms:CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

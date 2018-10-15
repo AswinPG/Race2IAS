@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5D59D41-B87F-4AB7-8A10-959A98D92F74}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Race2IAS.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Race2IAS.iOS</AssemblyName>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <OptimizePNGs>true</OptimizePNGs>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchNoSymbolStrip>false</MtouchNoSymbolStrip>
+    <CodesignProvision>Race2IAS</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>AppFile</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BaseUrl_iOS.cs" />
+    <Compile Include="FileAccessHelper.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen - Copy.storyboard" />
+    <BundleResource Include="Resources\polity.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\awards.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\biology.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\computer.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\geography.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\history.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\independance.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\physics.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\mocktest1.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\mocktest2.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\csat2.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\csat1.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\1201.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\401.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\402.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\581.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\801.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Windows.Foundation.UniversalApiContract">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16299.0\Windows.Foundation.UniversalApiContract\5.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xamarin.Forms.CarouselView">
+      <Version>2.3.0-pre2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Race2IAS\Race2IAS.csproj">
+      <Project>{602E23B0-BAFD-4795-8E83-5951D6A2B116}</Project>
+      <Name>Race2IAS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\studynotes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\currentaffairs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\magazine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mocktest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\race2ias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\downloads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wl - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\race2ias.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mock2_solutions.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\geography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\history2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\polity2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\awards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\biology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\capital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\general.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mathematics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logicalreasoning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mock1_solutions.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\48.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\49.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\mock4_solutions.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que15.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que16.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que17.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que18.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que19.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que20.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que21.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que22.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que23.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que24.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que25.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que26.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que27.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que28.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que29.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que30.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que31.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que32.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que33.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que34.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que35.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que36.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que37.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que38.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que39.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que4.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que40.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que41.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que42.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que43.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que44.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que45.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que46.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que47.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que48.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que49.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que5.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que50.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que6.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que7.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que8.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\que9.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat2\solutions.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que15.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que16.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que17.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que18.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que19.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que20.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que21.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que22.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que23.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que24.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que25.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que26.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que27.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que28.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que29.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que30.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que31.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que32.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que33.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que34.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que35.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que36.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que37.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que38.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que39.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que4.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que40.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que41.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que42.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que43.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que44.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que45.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que46.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que47.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que48.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que49.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que5.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que50.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que6.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que7.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que8.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\que9.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\csat1\mock3_solutions.html" />
+  </ItemGroup>
+</Project>

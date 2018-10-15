@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.SingleMockTestPage"
+             xmlns:tools1="clr-namespace:Race2IAS.Converters">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <tools1:CountDownConverter x:Key="CountDownTime"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="15"
+                     IsVisible="False"
+                     x:Name="MainLayout">
+                <Label Text="MockTest"
+                   TextColor="DarkBlue"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+                <StackLayout HeightRequest="30"/>
+                <ProgressBar x:Name="MainProgressBar"
+                         Progress="0"
+                         WidthRequest="300"
+                         HeightRequest="20"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         />
+                <Label x:Name="TimerLabel"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HeightRequest="30"
+                   TextColor="Red"
+                   Text="{Binding Progress, Source={x:Reference MainProgressBar},Converter={StaticResource CountDownTime},ConverterParameter=100000}"/>
+
+                <ScrollView 
+                         Padding="3"
+                         HeightRequest="240"
+                         VerticalOptions="End">
+                    <Label x:Name="Question"/>
+                </ScrollView>
+                <StackLayout HeightRequest="30"/>
+                <Grid RowSpacing="3"
+                  ColumnSpacing="3"
+                  VerticalOptions="End">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame IsClippedToBounds="false"
+                       HasShadow="true"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       BackgroundColor="Peru"
+                       x:Name="OptionAFrame"
+                   >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OptionAPressed" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                        <Frame.OutlineColor>
+                            <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                        </Frame.OutlineColor>
+                        <Frame.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                        </Frame.Margin>
+                        <Frame.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                        </Frame.Padding>
+                        <StackLayout Orientation="Vertical">
+
+                            <Label x:Name="OptionA"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame IsClippedToBounds="false"
+                       HasShadow="true"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       BackgroundColor="Peru"
+                       x:Name="OptionBFrame"    
+                   >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OptionBPressed" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                        <Frame.OutlineColor>
+                            <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                        </Frame.OutlineColor>
+                        <Frame.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                        </Frame.Margin>
+                        <Frame.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                        </Frame.Padding>
+                        <StackLayout Orientation="Vertical">
+
+                            <Label x:Name="OptionB"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame IsClippedToBounds="false"
+                       HasShadow="true"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       BackgroundColor="Peru"
+                       x:Name="OptionCFrame"
+                   >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OptionCPressed" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                        <Frame.OutlineColor>
+                            <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                        </Frame.OutlineColor>
+                        <Frame.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                        </Frame.Margin>
+                        <Frame.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                        </Frame.Padding>
+                        <StackLayout Orientation="Vertical">
+
+                            <Label x:Name="OptionC"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame IsClippedToBounds="false"
+                       HasShadow="true"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       BackgroundColor="Peru"
+                       x:Name="OptionDFrame"
+                   >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OptionDPressed" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                        <Frame.OutlineColor>
+                            <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                        </Frame.OutlineColor>
+                        <Frame.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                        </Frame.Margin>
+                        <Frame.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                        </Frame.Padding>
+                        <StackLayout Orientation="Vertical">
+
+                            <Label x:Name="OptionD"
+                           VerticalTextAlignment="Center"
+                               VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                </Grid>
+                <StackLayout HeightRequest="30"/>
+                <!--<ListView x:Name="MainListView"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Question}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            </StackLayout>
+            <StackLayout x:Name="ResultLayout"
+                         IsVisible="False">
+                <Label Text="Quiz Result"
+                       TextColor="DarkBlue"
+                       FontSize="36"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       HeightRequest="150"/>
+                <Label x:Name="Score"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Blue"
+                       FontSize="Large"/>
+                <Label x:Name="QuestionsAttented"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Brown"/>
+                <Label x:Name="Correct"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Green"/>
+                <Label x:Name="Wrong"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Red"/>
+                <StackLayout HeightRequest="40"/>
+                <Button x:Name="ViewAnswers"
+                            Clicked="ViewAnswers_Clicked"
+                            Text="View Answers"
+                            HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

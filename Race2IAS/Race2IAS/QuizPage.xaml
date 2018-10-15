@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.QuizPage">
+    <ContentPage.Content>
+        <ScrollView
+            BackgroundColor="#FFF7E6">
+            <Grid RowSpacing="3"
+                  ColumnSpacing="3"
+                  Padding="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="160"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="White"
+                   >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="FreedomQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="iday.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label1"
+                        Text="Freedom Quiz"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="Orange"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ITQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="computer.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label2"
+                        Text="IT"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="Gray"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PolityquizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="polity2.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label3"
+                        Text="Polity"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HistoryQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="history2.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label4"
+                        Text="History"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BiologyQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="biology.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label5"
+                        Text="Biology"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AwardsQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="awards.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label6"
+                        Text="Awards"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PhysicsQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="books.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label7"
+                        Text="Physics"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                
+                
+                <Frame IsClippedToBounds="false"
+                   HasShadow="true"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   BackgroundColor="White"
+                   >
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
+                                Android="OrangeRed"
+                                iOS="OrangeRed"/>
+                    </Frame.OutlineColor>
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="7"
+                                iOS="7"/>
+                    </Frame.Margin>
+                    <Frame.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                Android="20"
+                                iOS="7"/>
+                    </Frame.Padding>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GeographyQuizTapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="geography.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="100"
+                           WidthRequest="140"/>
+
+                        <Label x:Name="Label8"
+                        Text="Geography"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

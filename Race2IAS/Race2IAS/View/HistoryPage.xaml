@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.View.HistoryPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Image x:Name="Image"
+                   Source="wl.png"
+                   HeightRequest="210"/>
+            <Frame IsClippedToBounds="false"
+                    HasShadow="True"
+                    BackgroundColor="#FF9241"
+                    Margin="7"
+                    OutlineColor="Red"
+                    Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IndusValleyTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="1.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Indus Valley Civilization"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="EmpiresInAncientIndiaTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Empires In Ancient India"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="WarAndMessengerOfPeaceTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="3.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="War And Messenger Of Peace"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SocialReformersTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="4.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Social Reformers"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NationalSymbolsandMonumentsTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="5.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="National Symbols and Monuments"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

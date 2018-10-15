@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.View.MathematicsPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="5">
+            <Image x:Name="Image"
+                   Source="wl.png"
+                   HeightRequest="210"/>
+            <Frame IsClippedToBounds="false"
+                    HasShadow="True"
+                    BackgroundColor="#FF9241"
+                    Margin="7"
+                    OutlineColor="Red"
+                    Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OperationonNumbersTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="1.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Operation on Numbers"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="DecimalfractionHCFandLCMTapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                    <Label Text="Decimal fraction, HCF and LCM"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

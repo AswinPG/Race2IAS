@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Race2IAS.View.LogicalReasoningPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <Image x:Name="Image"
+                   Source="wl.png"
+                   HeightRequest="210"/>
+                <Frame IsClippedToBounds="false"
+                    HasShadow="True"
+                    BackgroundColor="#FF9241"
+                    Margin="7"
+                    OutlineColor="Red"
+                    Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="VisualProblemsTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Visual Problems"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="StatementandConclusionTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Statement and Conclusion"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="VerbalReasoningTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="Verbal Reasoning"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="false"
+                                   HasShadow="True"
+                                   BackgroundColor="#FF9241"
+                                   Margin="7"
+                                   OutlineColor="Red"
+                                   Padding="7">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MoreProblemsTapped"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4.  "
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           />
+
+                        <Label Text="More Problems"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
