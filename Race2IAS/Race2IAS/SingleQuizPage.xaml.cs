@@ -25,7 +25,7 @@ namespace Race2IAS
         public SingleQuizPage (string dpath, int lim)
 		{
 			InitializeComponent ();
-            a = dpath;
+            a = DependencyService.Get<IFileAccessHelper>().GetLocalFilePath(dpath);
             QD = new QuizData(a);
             var Data = QD.GetItemsAsync();
             Testing();

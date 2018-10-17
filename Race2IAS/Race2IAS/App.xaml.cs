@@ -14,7 +14,7 @@ namespace Race2IAS
 {
     public partial class App : Application
     {
-        public App(string dbPath)
+        public App()
         {
             InitializeComponent();
 

@@ -32,7 +32,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>in.doa.juniorias</string>
 	<key>CFBundleVersion</key>
-	<string>1.04</string>
+	<string>1.05</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -47,7 +47,7 @@
 		</dict>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>1.04</string>
+	<string>1.05</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Media.xcassets/LaunchImages.launchimage</string>
 </dict>

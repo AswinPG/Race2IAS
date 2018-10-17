@@ -19,42 +19,42 @@ namespace Race2IAS
 
         private async void FreedomQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("independance.db", 24));
+            await Navigation.PushAsync(new SingleQuizPage("independance", 24));
         }
 
         private async void BiologyQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("biology.db", 40));
+            await Navigation.PushAsync(new SingleQuizPage("biology", 40));
         }
 
         private async void ITQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("computer.db", 90));
+            await Navigation.PushAsync(new SingleQuizPage("computer", 90));
         }
 
         private async void AwardsQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("awards.db", 40));
+            await Navigation.PushAsync(new SingleQuizPage("awards", 40));
         }
 
         private async void PolityquizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("polity.db", 60));
+            await Navigation.PushAsync(new SingleQuizPage("polity", 60));
         }
 
         private async void PhysicsQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("physics.db", 30));
+            await Navigation.PushAsync(new SingleQuizPage("physics", 30));
         }
 
         private async void HistoryQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("history.db", 40));
+            await Navigation.PushAsync(new SingleQuizPage("history", 40));
         }
 
         private async void GeographyQuizTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SingleQuizPage("geography.db", 55));
+            await Navigation.PushAsync(new SingleQuizPage("geography", 55));
         }
     }
 }

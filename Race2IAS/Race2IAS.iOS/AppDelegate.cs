@@ -24,9 +24,9 @@ namespace Race2IAS.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            string dbPath = FileAccessHelper.GetLocalFilePath("awards.db");
+            //string dbPath = FileAccessHelper.GetLocalFilePath("awards.db");
 
-            LoadApplication (new App (dbPath));
+            LoadApplication (new App());
 
             return base.FinishedLaunching(app, options);
         }

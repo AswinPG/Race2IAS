@@ -26,7 +26,7 @@ namespace Race2IAS
         public SingleMockTestPage (string dpath, int lim, int f)
 		{
 			InitializeComponent ();
-            a = dpath;
+            a = DependencyService.Get<IFileAccessHelper>().GetLocalFilePath(dpath);
             QD = new QuizData(a);
             var Data = QD.GetItemsAsync();
             Testing();
