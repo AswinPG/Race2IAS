@@ -6,6 +6,7 @@ namespace Race2IAS.Model
 {
     public class Score
     {
+        //Score Data Model
         public double Total { get; set; }
         public int Correct { get; set; }
         public int Wrong { get; set; }

@@ -18,7 +18,8 @@ namespace Race2IAS
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new SingleQuizPage("independance", 24));
         }
 
         protected override void OnStart()
