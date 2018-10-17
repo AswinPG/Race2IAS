@@ -19,9 +19,10 @@ namespace Race2IAS.Model
         {
             return database.Table<questions>().ToListAsync();
         }
-        public Task<questions> GetItemsAsync(int id)
+        public async Task<questions> GetItemsAsync(int id)
         {
-            return database.Table<questions>().Where(i => i._id == id).FirstOrDefaultAsync();
+            questions q = await database.Table<questions>().Where(i => i._id == id).FirstOrDefaultAsync();
+            return q;
         }
     }
 }
