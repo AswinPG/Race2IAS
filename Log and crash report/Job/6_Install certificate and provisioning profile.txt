@@ -1,0 +1,10 @@
+2018-10-17T14:24:57.6452700Z ##[section]Starting: Install certificate and provisioning profile
+2018-10-17T14:24:57.6457390Z ==============================================================================
+2018-10-17T14:24:57.6457890Z Task         : Shell Script
+2018-10-17T14:24:57.6458090Z Description  : Run a shell script using bash
+2018-10-17T14:24:57.6458190Z Version      : 2.1.3
+2018-10-17T14:24:57.6458370Z Author       : Microsoft Corporation
+2018-10-17T14:24:57.6458560Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613738)
+2018-10-17T14:24:57.6458690Z ==============================================================================
+2018-10-17T14:24:57.8460330Z [command]/bin/bash /Users/vsts/agent/2.140.2/scripts/installcerts.sh *** ***
+2018-10-17T14:24:57.9896920Z ##[section]Finishing: Install certificate and provisioning profile

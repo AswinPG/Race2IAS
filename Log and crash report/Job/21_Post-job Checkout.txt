@@ -1,0 +1,10 @@
+2018-10-17T14:38:19.3545540Z ##[section]Starting: Checkout
+2018-10-17T14:38:19.3548940Z ==============================================================================
+2018-10-17T14:38:19.3549090Z Task         : Get sources
+2018-10-17T14:38:19.3549200Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2018-10-17T14:38:19.3549320Z Version      : 1.0.0
+2018-10-17T14:38:19.3549430Z Author       : Microsoft
+2018-10-17T14:38:19.3549550Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2018-10-17T14:38:19.3549680Z ==============================================================================
+2018-10-17T14:38:20.0305520Z Cleaning any cached credential from repository: Race2IAS (ExternalGit)
+2018-10-17T14:38:20.1010540Z ##[section]Finishing: Checkout

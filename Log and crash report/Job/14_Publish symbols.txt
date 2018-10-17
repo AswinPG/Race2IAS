@@ -1,0 +1,15 @@
+2018-10-17T14:27:01.0980430Z ##[section]Starting: Publish symbols
+2018-10-17T14:27:01.0985750Z ==============================================================================
+2018-10-17T14:27:01.0985900Z Task         : Publish Build Artifacts
+2018-10-17T14:27:01.0986030Z Description  : Publish build artifacts to Visual Studio Team Services/TFS or a file share
+2018-10-17T14:27:01.0986170Z Version      : 1.135.0
+2018-10-17T14:27:01.0986260Z Author       : Microsoft Corporation
+2018-10-17T14:27:01.0986390Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708390)
+2018-10-17T14:27:01.0986510Z ==============================================================================
+2018-10-17T14:27:01.3811900Z ##[section]Async Command Start: Upload Artifact
+2018-10-17T14:27:01.3812170Z Uploading 2 files
+2018-10-17T14:27:05.4999830Z File upload succeed.
+2018-10-17T14:27:05.5000080Z Upload '/Users/vsts/agent/2.140.2/work/1/a/symbols' to file container: '#/352364/symbols'
+2018-10-17T14:27:05.6500190Z Associated artifact 4 with build 5
+2018-10-17T14:27:05.6500480Z ##[section]Async Command End: Upload Artifact
+2018-10-17T14:27:05.6501800Z ##[section]Finishing: Publish symbols

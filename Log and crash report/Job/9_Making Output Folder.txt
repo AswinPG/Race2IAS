@@ -1,0 +1,10 @@
+2018-10-17T14:26:56.5338550Z ##[section]Starting: Making Output Folder
+2018-10-17T14:26:56.5345030Z ==============================================================================
+2018-10-17T14:26:56.5345270Z Task         : Command Line
+2018-10-17T14:26:56.5345470Z Description  : Run a command line with arguments
+2018-10-17T14:26:56.5345650Z Version      : 1.1.3
+2018-10-17T14:26:56.5345840Z Author       : Microsoft Corporation
+2018-10-17T14:26:56.5346030Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613735)
+2018-10-17T14:26:56.5346290Z ==============================================================================
+2018-10-17T14:26:56.7634440Z [command]/bin/mkdir /Users/vsts/agent/2.140.2/work/1/a/build
+2018-10-17T14:26:56.8610760Z ##[section]Finishing: Making Output Folder

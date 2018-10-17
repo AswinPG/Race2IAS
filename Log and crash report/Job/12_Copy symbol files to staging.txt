@@ -1,0 +1,16 @@
+2018-10-17T14:26:57.4970270Z ##[section]Starting: Copy symbol files to staging
+2018-10-17T14:26:57.4975220Z ==============================================================================
+2018-10-17T14:26:57.4975350Z Task         : Command Line
+2018-10-17T14:26:57.4975700Z Description  : Run a command line with arguments
+2018-10-17T14:26:57.4975940Z Version      : 1.1.3
+2018-10-17T14:26:57.4976060Z Author       : Microsoft Corporation
+2018-10-17T14:26:57.4976280Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613735)
+2018-10-17T14:26:57.4976410Z ==============================================================================
+2018-10-17T14:26:57.7064790Z [command]/usr/bin/find . -type d -name *.dSYM -exec cp -v -R {} /Users/vsts/agent/2.140.2/work/1/a/symbols ;
+2018-10-17T14:26:57.9049940Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM
+2018-10-17T14:26:57.9051720Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM/Contents -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM/Contents
+2018-10-17T14:26:57.9052770Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM/Contents/Info.plist -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM/Contents/Info.plist
+2018-10-17T14:26:57.9053650Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM/Contents/Resources -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM/Contents/Resources
+2018-10-17T14:26:57.9054580Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM/Contents/Resources/DWARF -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM/Contents/Resources/DWARF
+2018-10-17T14:26:57.9055590Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/Race2IAS.iOS.app.dSYM/Contents/Resources/DWARF/Race2IAS.iOS -> /Users/vsts/agent/2.140.2/work/1/a/symbols/Race2IAS.iOS.app.dSYM/Contents/Resources/DWARF/Race2IAS.iOS
+2018-10-17T14:26:58.0341530Z ##[section]Finishing: Copy symbol files to staging

@@ -1,0 +1,13 @@
+2018-10-17T14:24:41.4342380Z ##[section]Starting: Initialize job
+2018-10-17T14:24:41.4342750Z Current agent version: '2.140.2'
+2018-10-17T14:24:41.4614060Z Prepare build directory.
+2018-10-17T14:24:41.5000960Z Set build variables.
+2018-10-17T14:24:41.5066530Z Download all required tasks.
+2018-10-17T14:24:41.5235670Z Downloading task: ShellScript
+2018-10-17T14:24:41.9357730Z Downloading task: CmdLine
+2018-10-17T14:24:42.4254460Z Downloading task: XamariniOS
+2018-10-17T14:24:42.7124800Z Downloading task: PublishBuildArtifacts
+2018-10-17T14:24:42.9631330Z Downloading task: Maven
+2018-10-17T14:24:44.7828910Z Downloading task: CopyFiles
+2018-10-17T14:24:45.0457380Z Downloading task: AppCenterTest
+2018-10-17T14:24:50.2257910Z ##[section]Finishing: Initialize job

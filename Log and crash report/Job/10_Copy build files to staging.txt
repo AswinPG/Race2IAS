@@ -1,0 +1,11 @@
+2018-10-17T14:26:56.8628930Z ##[section]Starting: Copy build files to staging
+2018-10-17T14:26:56.8634160Z ==============================================================================
+2018-10-17T14:26:56.8634290Z Task         : Command Line
+2018-10-17T14:26:56.8634490Z Description  : Run a command line with arguments
+2018-10-17T14:26:56.8634610Z Version      : 1.1.3
+2018-10-17T14:26:56.8634710Z Author       : Microsoft Corporation
+2018-10-17T14:26:56.8634930Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613735)
+2018-10-17T14:26:56.8635050Z ==============================================================================
+2018-10-17T14:26:57.0922440Z [command]/bin/bash -c /usr/bin/find . ! -path '*/obj/*' -type f -name '*.ipa' -print0 | xargs -0 stat -f "%m %N" | sort -rn | head -1 | cut -f2- -d" " | xargs -L 1 -I{} cp -R -v {} /Users/vsts/agent/2.140.2/work/1/a/build
+2018-10-17T14:26:57.2137460Z ./Race2IAS/Race2IAS.iOS/bin/iPhone/Release/AppFile.ipa -> /Users/vsts/agent/2.140.2/work/1/a/build/AppFile.ipa
+2018-10-17T14:26:57.2432850Z ##[section]Finishing: Copy build files to staging

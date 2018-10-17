@@ -1,0 +1,15 @@
+2018-10-17T14:24:56.9206910Z ##[section]Starting: Set Xamarin SDK Bundle
+2018-10-17T14:24:56.9257200Z ==============================================================================
+2018-10-17T14:24:56.9257380Z Task         : Shell Script
+2018-10-17T14:24:56.9257490Z Description  : Run a shell script using bash
+2018-10-17T14:24:56.9257600Z Version      : 2.1.3
+2018-10-17T14:24:56.9257780Z Author       : Microsoft Corporation
+2018-10-17T14:24:56.9258040Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613738)
+2018-10-17T14:24:56.9258200Z ==============================================================================
+2018-10-17T14:24:57.1631170Z [command]/bin/bash /Users/vsts/agent/2.140.2/scripts/select-xamarin-sdk.sh 5_12_0
+2018-10-17T14:24:57.1750630Z Set Xamarin SDK to 5_12_0
+2018-10-17T14:24:57.1752260Z Set Current folder for /Library/Frameworks/Mono.framework/Versions
+2018-10-17T14:24:57.2835840Z Set Current folder for /Library/Frameworks/Xamarin.iOS.framework/Versions
+2018-10-17T14:24:57.3704970Z Set Current folder for /Library/Frameworks/Xamarin.Android.framework/Versions
+2018-10-17T14:24:57.4645910Z Set Current folder for /Library/Frameworks/Xamarin.Mac.framework/Versions
+2018-10-17T14:24:57.6435950Z ##[section]Finishing: Set Xamarin SDK Bundle

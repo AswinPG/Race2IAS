@@ -1,0 +1,28 @@
+2018-10-17T14:27:05.6533480Z ##[section]Starting: Tag build
+2018-10-17T14:27:05.6538470Z ==============================================================================
+2018-10-17T14:27:05.6538710Z Task         : Shell Script
+2018-10-17T14:27:05.6538880Z Description  : Run a shell script using bash
+2018-10-17T14:27:05.6539080Z Version      : 2.1.3
+2018-10-17T14:27:05.6539270Z Author       : Microsoft Corporation
+2018-10-17T14:27:05.6539510Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613738)
+2018-10-17T14:27:05.6540240Z ==============================================================================
+2018-10-17T14:27:05.8839110Z [command]/bin/bash /Users/vsts/agent/2.140.2/scripts/emit-tags.sh continuous,xamarin,signed,msbuild,xcode,testcloud
+2018-10-17T14:27:06.2659410Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.2659650Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.2659800Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.2660770Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.2660970Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.2661110Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.2662030Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.2662210Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.2662370Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.2663300Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.2663490Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.2663610Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.2664540Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.2932890Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.2933140Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.2934740Z ##[section]Async Command Start: Add Build Tag
+2018-10-17T14:27:06.3418760Z Build '5' has following tags now: normal, continuous, xamarin, signed, msbuild, xcode, testcloud
+2018-10-17T14:27:06.3418970Z ##[section]Async Command End: Add Build Tag
+2018-10-17T14:27:06.3420340Z ##[section]Finishing: Tag build

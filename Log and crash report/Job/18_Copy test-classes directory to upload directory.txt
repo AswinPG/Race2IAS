@@ -1,0 +1,11 @@
+2018-10-17T14:27:24.4709620Z ##[section]Starting: Copy test-classes directory to upload directory
+2018-10-17T14:27:24.4714270Z ==============================================================================
+2018-10-17T14:27:24.4714420Z Task         : Copy Files
+2018-10-17T14:27:24.4714570Z Description  : Copy files from source folder to target folder using match patterns (The match patterns will only match file paths, not folder paths)
+2018-10-17T14:27:24.4714700Z Version      : 2.117.0
+2018-10-17T14:27:24.4714810Z Author       : Microsoft Corporation
+2018-10-17T14:27:24.4714920Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708389)
+2018-10-17T14:27:24.4715060Z ==============================================================================
+2018-10-17T14:27:24.7104710Z found 1 files
+2018-10-17T14:27:24.7116240Z File /Users/vsts/agent/2.140.2/work/1/a/GeneratedTest/target/test-classes/com/azure/mobile/app/test/LaunchTest.class already exist at /Users/vsts/agent/2.140.2/work/1/a/GeneratedTest/target/upload/test-classes/com/azure/mobile/app/test/LaunchTest.class
+2018-10-17T14:27:24.7811710Z ##[section]Finishing: Copy test-classes directory to upload directory

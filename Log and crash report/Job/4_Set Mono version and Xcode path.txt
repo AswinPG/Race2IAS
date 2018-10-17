@@ -1,0 +1,9 @@
+2018-10-17T14:24:56.3667010Z ##[section]Starting: Set Mono version and Xcode path
+2018-10-17T14:24:56.3671660Z ==============================================================================
+2018-10-17T14:24:56.3671840Z Task         : Command Line
+2018-10-17T14:24:56.3671970Z Description  : Run a command line with arguments
+2018-10-17T14:24:56.3672070Z Version      : 1.1.3
+2018-10-17T14:24:56.3672180Z Author       : Microsoft Corporation
+2018-10-17T14:24:56.3672290Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613735)
+2018-10-17T14:24:56.3672430Z ==============================================================================
+2018-10-17T14:24:56.9187250Z ##[section]Finishing: Set Mono version and Xcode path

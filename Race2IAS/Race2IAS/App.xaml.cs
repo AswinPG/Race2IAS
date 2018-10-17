@@ -18,7 +18,7 @@ namespace Race2IAS
         {
             InitializeComponent();
 
-            MainPage = new SingleQuizPage("biology.db", 40);
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

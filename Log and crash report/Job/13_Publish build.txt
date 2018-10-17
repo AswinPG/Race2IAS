@@ -1,0 +1,15 @@
+2018-10-17T14:26:58.0359030Z ##[section]Starting: Publish build
+2018-10-17T14:26:58.0364450Z ==============================================================================
+2018-10-17T14:26:58.0364600Z Task         : Publish Build Artifacts
+2018-10-17T14:26:58.0364810Z Description  : Publish build artifacts to Visual Studio Team Services/TFS or a file share
+2018-10-17T14:26:58.0364930Z Version      : 1.135.0
+2018-10-17T14:26:58.0365120Z Author       : Microsoft Corporation
+2018-10-17T14:26:58.0365260Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708390)
+2018-10-17T14:26:58.0365380Z ==============================================================================
+2018-10-17T14:26:58.4044090Z ##[section]Async Command Start: Upload Artifact
+2018-10-17T14:26:58.4044470Z Uploading 1 files
+2018-10-17T14:27:01.0004160Z File upload succeed.
+2018-10-17T14:27:01.0004440Z Upload '/Users/vsts/agent/2.140.2/work/1/a/build' to file container: '#/352364/build'
+2018-10-17T14:27:01.0962360Z Associated artifact 3 with build 5
+2018-10-17T14:27:01.0962680Z ##[section]Async Command End: Upload Artifact
+2018-10-17T14:27:01.0964080Z ##[section]Finishing: Publish build

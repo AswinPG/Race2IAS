@@ -1,0 +1,10 @@
+2018-10-17T14:27:06.3631320Z ##[section]Starting: Generate Appium tests
+2018-10-17T14:27:06.3636180Z ==============================================================================
+2018-10-17T14:27:06.3636330Z Task         : Command Line
+2018-10-17T14:27:06.3636450Z Description  : Run a command line with arguments
+2018-10-17T14:27:06.3636550Z Version      : 1.1.3
+2018-10-17T14:27:06.3636660Z Author       : Microsoft Corporation
+2018-10-17T14:27:06.3636770Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613735)
+2018-10-17T14:27:06.3636910Z ==============================================================================
+2018-10-17T14:27:06.5920070Z [command]/usr/local/bin/appcenter test generate appium --platform ios --output-path /Users/vsts/agent/2.140.2/work/1/a/GeneratedTest
+2018-10-17T14:27:08.9969260Z ##[section]Finishing: Generate Appium tests
