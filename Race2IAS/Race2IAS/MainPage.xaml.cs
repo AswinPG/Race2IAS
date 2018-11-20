@@ -61,5 +61,10 @@ namespace Race2IAS
         {
             await DisplayAlert("Race2IAS", "No  Notifications Yet", "Okay");
         }
+
+        private void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

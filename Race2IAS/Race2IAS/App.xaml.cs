@@ -17,8 +17,13 @@ namespace Race2IAS
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage());
+            string l = DependencyService.Get<IFirebaseAuthenticator>().loggedinornot();
+            if (l == "true")
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
+            else
+                MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

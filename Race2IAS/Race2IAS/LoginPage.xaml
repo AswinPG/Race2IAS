@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="bg.jpg"
+             Title="Race2IAS"
+             x:Class="Race2IAS.LoginPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Start">
+                <Image Source="header.png"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center">
+                <Label HeightRequest="70"/>
+                <Label Text="Provide your phone number "
+                   TextColor="Black"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                       x:Name="Fir1"
+                   />
+                <Label HeightRequest="10"/>
+                <Entry x:Name="number"
+                       WidthRequest="300"
+                       Text=""/>
+                <Label HeightRequest="10"/>
+            
+                <Label Text="Your Name... "
+                       TextColor="Black"
+                       x:Name="fir2"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                       />
+                <Label HeightRequest="10"/>
+                <Entry x:Name="name"
+                       Text=""
+                       WidthRequest="300"/>
+                <Label HeightRequest="20"/>
+                <Label Text="Enter the otp you recieved"
+                       IsVisible="False"
+                       x:Name="askotp"/>
+                <Entry x:Name="otp"
+                   IsVisible="False"/>
+                <Button Text="Submit"
+                        x:Name="submit"
+                        IsVisible="True"
+                    Clicked="Button_Clicked"/>
+                <Button Text="Login"
+                        x:Name="login"
+                        IsVisible="False"
+                        Clicked="login_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

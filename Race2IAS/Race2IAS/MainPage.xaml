@@ -8,10 +8,15 @@
              Title="Race2IAS">
 
     <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Text="Profile"
+                     Icon="pro.png"
+                     Clicked="ToolbarItem_Clicked_1"
+                     Priority="0"/>
         <ToolbarItem Text="Notifications"
                      Icon="bell.png"
                      Clicked="ToolbarItem_Clicked"
-                     Priority="0"
+                     Priority="1"
                      />
     </ContentPage.ToolbarItems>
     <ScrollView
@@ -30,14 +35,14 @@
 
 
         
-            <Grid RowSpacing="3"
-                  ColumnSpacing="3"
+            <Grid RowSpacing="20"
+                  ColumnSpacing="20"
                   Padding="10">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="160"/>
-                <RowDefinition Height="160"/>
-                <RowDefinition Height="160"/>
+                <RowDefinition Height="168"/>
+                <RowDefinition Height="168"/>
+                <RowDefinition Height="168"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -50,6 +55,9 @@
                    Grid.Row="0"
                    Grid.Column="0"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
+                   OutlineColor="OrangeRed"
                    >
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="CurrentAffairs_Tapped" NumberOfTapsRequired="1"/>
@@ -59,27 +67,14 @@
                                 Android="OrangeRed"
                                 iOS="OrangeRed"/>
                 </Frame.OutlineColor>
-                <Frame.Margin>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="7"
-                                iOS="7"/>
-                </Frame.Margin>
-                <Frame.Padding>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="20"
-                                iOS="7"/>
-                </Frame.Padding>
+                
                 <StackLayout Orientation="Vertical">
-                    <Image Source="currentaffairs.png"
+                    <Image Source="1.jpg"
                            HorizontalOptions="Center"
+                           Aspect="AspectFill"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
+                           />
 
-                    <Label x:Name="Label1"
-                        Text="Current Affairs"
-                           VerticalTextAlignment="Center"
-                           HorizontalTextAlignment="Center"/>
                 </StackLayout>
             </Frame>
 
@@ -88,36 +83,25 @@
                    Grid.Row="0"
                    Grid.Column="1"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
                    >
                 <Frame.OutlineColor>
                     <OnPlatform x:TypeArguments="Color"
                                 Android="OrangeRed"
                                 iOS="Orange"/>
                 </Frame.OutlineColor>
-                <Frame.Margin>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="7"
-                                iOS="7"/>
-                </Frame.Margin>
-                <Frame.Padding>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="20"
-                                iOS="7"/>
-                </Frame.Padding>
+                
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="MockTestTapped" NumberOfTapsRequired="1"/>
                 </Frame.GestureRecognizers>
                 <StackLayout Orientation="Vertical">
-                    <Image Source="mocktest.png"
+                    <Image Source="2.jpg"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
+                           Aspect="AspectFill"
+                           />
 
-                    <Label x:Name="Label2"
-                        Text="Mock Test"
-                           VerticalTextAlignment="End"
-                           HorizontalTextAlignment="Center"/>
                 </StackLayout>
             </Frame>
 
@@ -126,37 +110,25 @@
                    Grid.Row="1"
                    Grid.Column="0"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
                    >
                 <Frame.OutlineColor>
                     <OnPlatform x:TypeArguments="Color"
                                 Android="Gray"
                                 iOS="OrangeRed"/>
                 </Frame.OutlineColor>
-                <Frame.Margin>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="7"
-                                iOS="7"/>
-                </Frame.Margin>
-                <Frame.Padding>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="20"
-                                iOS="7"/>
-                </Frame.Padding>
+                
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="StudyNotesPageTapped" NumberOfTapsRequired="1"/>
                     </Frame.GestureRecognizers>
                     <StackLayout Orientation="Vertical">
-                    <Image Source="magazine.png"
+                        <Image Source="3.jpg"
                            HorizontalOptions="Center"
+                               Aspect="AspectFill"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
-
-                    <Label x:Name="Label3"
-                        Text="Study Notes"
-                           VerticalTextAlignment="End"
-                           HorizontalTextAlignment="Center"/>
-                </StackLayout>
+                           />
+                    </StackLayout>
             </Frame>
 
             <Frame IsClippedToBounds="false"
@@ -164,36 +136,24 @@
                    Grid.Row="1"
                    Grid.Column="1"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
                    >
                     <Frame.OutlineColor>
                         <OnPlatform x:TypeArguments="Color"
                                     Android="OrangeRed"
                                     iOS="OrangeRed"/>
                     </Frame.OutlineColor>
-                    <Frame.Margin>
-                        <OnPlatform x:TypeArguments="Thickness"
-                                    Android="7"
-                                    iOS="7"/>
-                    </Frame.Margin>
-                    <Frame.Padding>
-                        <OnPlatform x:TypeArguments="Thickness"
-                                    Android="20"
-                                    iOS="7"/>
-                    </Frame.Padding>
+                    
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Quiz_Tapped" NumberOfTapsRequired="1"/>
                     </Frame.GestureRecognizers>
                     <StackLayout Orientation="Vertical">
-                    <Image Source="studynotes.png"
+                        <Image Source="quiz1.jpg"
                            HorizontalOptions="Center"
+                               Aspect="AspectFill"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
-
-                    <Label x:Name="Label4"
-                        Text="Quiz"
-                           VerticalTextAlignment="End"
-                           HorizontalTextAlignment="Center"/>
+                           />
                     </StackLayout>
             </Frame>
 
@@ -202,34 +162,21 @@
                    Grid.Row="2"
                    Grid.Column="0"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
                    >
-                <Frame.OutlineColor>
-                    <OnPlatform x:TypeArguments="Color"
+                    <Frame.OutlineColor>
+                        <OnPlatform x:TypeArguments="Color"
                                 Android="OrangeRed"
                                 iOS="OrangeRed"/>
-                </Frame.OutlineColor>
-                <Frame.Margin>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="7"
-                                iOS="7"/>
-                </Frame.Margin>
-                <Frame.Padding>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="20"
-                                iOS="7"/>
-                </Frame.Padding>
-                <StackLayout Orientation="Vertical">
-                    <Image Source="downloads.png"
+                    </Frame.OutlineColor>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="upsc.jpg"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
-
-                    <Label x:Name="Label5"
-                        Text="Downloads"
-                           VerticalTextAlignment="End"
-                           HorizontalTextAlignment="Center"/>
-                </StackLayout>
+                               Aspect="AspectFill"
+                           />
+                    </StackLayout>
             </Frame>
 
             <Frame IsClippedToBounds="false"
@@ -237,36 +184,30 @@
                    Grid.Row="2"
                    Grid.Column="1"
                    BackgroundColor="White"
+                   Padding="0"
+                   Margin="0"
                    >
                 <Frame.OutlineColor>
                     <OnPlatform x:TypeArguments="Color"
                                 Android="OrangeRed"
                                 iOS="OrangeRed"/>
                 </Frame.OutlineColor>
-                <Frame.Margin>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="7"
-                                iOS="7"/>
-                </Frame.Margin>
-                <Frame.Padding>
-                    <OnPlatform x:TypeArguments="Thickness"
-                                Android="20"
-                                iOS="7"/>
-                </Frame.Padding>
+                
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Race2IASTapped" NumberOfTapsRequired="1"/>
                     </Frame.GestureRecognizers>
+                    
                     <StackLayout Orientation="Vertical">
-                    <Image Source="race2ias.png"
+                    <Image Source="race.jpg"
+                           Aspect="AspectFill"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           HeightRequest="100"
-                           WidthRequest="140"/>
+                           />
 
-                    <Label x:Name="Label6"
+                    <!--<Label x:Name="Label6"
                         Text="Race2IAS"
                            VerticalTextAlignment="End"
-                           HorizontalTextAlignment="Center"/>
+                           HorizontalTextAlignment="Center"/>-->
                 </StackLayout>
             </Frame>
         </Grid>

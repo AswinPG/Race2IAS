@@ -20,19 +20,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads </key>
-		<true/>
-	</dict>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>9.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>Race2IAS</string>
 	<key>CFBundleIdentifier</key>
 	<string>in.doa.juniorias</string>
 	<key>CFBundleVersion</key>
-	<string>1.05</string>
+	<string>1.06</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -45,10 +40,22 @@
 			<key>CFBundleURLName</key>
 			<string>URL Type 1</string>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>URL Type 2</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.817949973071-10q6sda4te3rcjvop7s3092p9tkahgl6</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>1.05</string>
+	<string>1.06</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Media.xcassets/LaunchImages.launchimage</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>
