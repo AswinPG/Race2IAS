@@ -40,9 +40,12 @@
                   Padding="10">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="168"/>
-                <RowDefinition Height="168"/>
-                <RowDefinition Height="168"/>
+                <RowDefinition Height="168"
+                               x:Name="Row1"/>
+                <RowDefinition Height="168"
+                               x:Name="Row2"/>
+                <RowDefinition Height="168"
+                               x:Name="Row3"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>

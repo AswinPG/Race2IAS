@@ -15,6 +15,8 @@ namespace Race2IAS
 		public UserPage ()
 		{
 			InitializeComponent ();
+            string Name = DependencyService.Get<IFirebaseAuthenticator>().GetUserName();
+            UserName.Text = Name;
 		}
 	}
 }

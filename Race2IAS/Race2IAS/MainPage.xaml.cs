@@ -14,6 +14,13 @@ namespace Race2IAS
         public MainPage()
         {
             InitializeComponent();
+            if (Xamarin.Forms.Device.Idiom == TargetIdiom.Tablet)
+            {
+                Row1.Height = 490;
+                Row2.Height = 490;
+                Row3.Height = 490;
+                MainCarouselView.HeightRequest = 560;
+            }
             var names = new List<string>
             {
                 "wl.png","wl2.png","wl3.png","wl4","wl5.png" ,"wl6" 
@@ -62,9 +69,11 @@ namespace Race2IAS
             await DisplayAlert("Race2IAS", "No  Notifications Yet", "Okay");
         }
 
-        private void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new UserPage());
+            DependencyService.Get<IRealTimeDatabase>().Connect();
+            DependencyService.Get<IRealTimeDatabase>().Rate();
         }
     }
 }

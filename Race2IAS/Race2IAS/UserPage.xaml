@@ -1,13 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿ <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Race2IAS.UserPage"
-             BackgroundImage="cover.jpg">
+             >
     <ContentPage.Content>
-        <StackLayout>
+        <RelativeLayout>
+            
+            <Image VerticalOptions="Start"
+                   x:Name="Back"
+                   Aspect="AspectFit"
+                   Source="cover.jpg"
+                   RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+            </Image>
+            <Image HeightRequest="100"
+                   Source="people2.png"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Back, Property=Height, Factor=1, Constant=-50 }"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Back, Property=Width, Factor=.5,Constant=-79}"
+                   WidthRequest="158"/>
+            <Label x:Name="UserName"
+                   Text="Your Name"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Back, Property=Height, Factor=1, Constant=80 }"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   HorizontalOptions="Center" />
+
+        </RelativeLayout>
+        <!--<StackLayout>
             <Label x:Name="Username"
-                VerticalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"
+                   Text="gvghvhg"
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            
+        </StackLayout>-->
+
     </ContentPage.Content>
 </ContentPage>

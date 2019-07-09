@@ -13,7 +13,7 @@ namespace Race2IAS
     public partial class LoginPage : ContentPage
     {
 
-        public string x,otpp,y;
+        public string x,otpp,y,Name;
         public LoginPage()
         {
             InitializeComponent();
@@ -31,10 +31,11 @@ namespace Race2IAS
             else
             {
                 x = number.Text;
-                y = await DependencyService.Get<IFirebaseAuthenticator>().PhoneAuth("+91" + x);
+                Name = name.Text;
+                y = await DependencyService.Get<IFirebaseAuthenticator>().PhoneAuth("+91" + x,Name);
                 //await Navigation.PopAsync();
                 number.IsVisible = false;
-                fir2.IsVisible = false;
+                UserName.IsVisible = false;
                 Fir1.IsVisible = false;
                 name.IsVisible = false;
                 otp.IsVisible = true;
@@ -42,7 +43,7 @@ namespace Race2IAS
                 login.IsVisible = true;
                 askotp.IsVisible = true;
                 
-                
+
                 //DependencyService.Get<IFirebaseAuthenticator>().Login(y,otpp);
                 //Application.Current.MainPage = new NavigationPage(new MainPage());
             }
@@ -60,7 +61,7 @@ namespace Race2IAS
             }
             catch
             {
-                DisplayAlert("Error", "Login Failed", "Try again");
+                await DisplayAlert("Error", "Login Failed", "Try again");
                 //await Navigation.PushAsync(new LoginPage());
             }
         }

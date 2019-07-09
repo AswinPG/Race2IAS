@@ -27,7 +27,7 @@
             
                 <Label Text="Your Name... "
                        TextColor="Black"
-                       x:Name="fir2"
+                       x:Name="UserName"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
                        />

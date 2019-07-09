@@ -29,10 +29,10 @@ namespace Race2IAS
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start("ios=ffe5b6d2-d89a-46f0-a6d7-21735e31f949;" +
+            /*AppCenter.Start("ios=ffe5b6d2-d89a-46f0-a6d7-21735e31f949;" +
                   "uwp={Your UWP App secret here};" +
                   "android={Your Android App secret here}",
-                  typeof(Analytics), typeof(Crashes));//Appcenter
+                  typeof(Analytics), typeof(Crashes));//Appcenter*/
         }
 
         protected override void OnSleep()

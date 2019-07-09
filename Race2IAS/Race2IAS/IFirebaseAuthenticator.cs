@@ -9,8 +9,9 @@ namespace Race2IAS
     {
         Task<string> LoginWithEmailPassword(string email, string password);
         Task<string> RegsiterWithEmailPassword(string email, string password);
-        Task<string> PhoneAuth(string number);
+        Task<string> PhoneAuth(string number, string Name);
         void Login(string ver, string num);
         string loggedinornot();
+        string GetUserName();
     }
 }

@@ -19,7 +19,7 @@ namespace Race2IAS
 
         private async void Recent_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CarousalWebView(67, 176));
+            await Navigation.PushAsync(new CarousalWebView(67, 466));
             await DisplayAlert("Current Affairs", "Swipe Right To View More ...!!", "Ok");
         }
 

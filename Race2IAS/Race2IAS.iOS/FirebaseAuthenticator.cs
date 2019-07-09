@@ -29,12 +29,13 @@ namespace Race2IAS.iOS
             throw new NotImplementedException();
         }
 
-        public async Task<string> PhoneAuth(string number)
+        public async Task<string> PhoneAuth(string number, string Name)
         {
             try
             {
                 string verificationID = await PhoneAuthProvider.DefaultInstance.VerifyPhoneNumberAsync(number, null);
                 NSUserDefaults.StandardUserDefaults.SetString(verificationID, "verificationID");
+                NSUserDefaults.StandardUserDefaults.SetString(Name, "UserName");
                 NSUserDefaults.StandardUserDefaults.Synchronize();
                 verificationID = NSUserDefaults.StandardUserDefaults.StringForKey("verificationID");
                 return verificationID;
@@ -69,6 +70,11 @@ namespace Race2IAS.iOS
         public string loggedinornot()
         {
             return NSUserDefaults.StandardUserDefaults.StringForKey("Login");
+        }
+
+        public string GetUserName()
+        {
+            return NSUserDefaults.StandardUserDefaults.StringForKey("UserName");
         }
 
     }
